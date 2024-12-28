@@ -3,8 +3,6 @@
 ## Problem Statement
 Cattle cardiovascular disease (CVD) can cause significant health and productivity issues, impacting the agricultural industry. This project aims to develop a machine learning model for the early detection of CVD using retinal images of cattle. By leveraging deep learning techniques, we can classify these images into CVD and Non-CVD categories, enabling faster and more accurate diagnoses.
 
----
-
 ## Dataset Description
 
 ### Source
@@ -30,8 +28,6 @@ To address the challenges, the following preprocessing steps were applied:
    - Zooming
    - Brightness and Contrast Adjustments
 
----
-
 ## Methodology
 
 ### 1. Problem Approach
@@ -46,8 +42,6 @@ The CNN architecture used in this project includes the following components:
 - **Fully Connected Layers**: Perform the final classification into CVD/Non-CVD categories.
 - **Output Layer**: Uses a sigmoid activation function for binary classification.
 
----
-
 ## Evaluation Metrics
 To assess the performance of the model, the following metrics were used:
 1. **Accuracy**: Measures the percentage of correctly classified images.
@@ -55,8 +49,6 @@ To assess the performance of the model, the following metrics were used:
 3. **Recall (Sensitivity)**: Emphasizes the model's ability to identify all positive cases.
 4. **F1-Score**: Provides a balance between precision and recall.
 5. **AUC-ROC Curve**: Evaluates the model's ability to distinguish between the two classes.
-
----
 
 ## Results
 
@@ -69,8 +61,6 @@ To assess the performance of the model, the following metrics were used:
 ### Grad-CAM Visualizations
 To enhance model interpretability, Grad-CAM was used to visualize the areas of the retina that the model focused on while making predictions. These heatmaps provide insights into the decision-making process and help validate the model's reliability.
 
----
-
 ## Challenges and Solutions
 
 1. **Data Imbalance**: The dataset had fewer samples for one class.
@@ -79,8 +69,6 @@ To enhance model interpretability, Grad-CAM was used to visualize the areas of t
    - **Solution**: Implemented dropout layers and early stopping.
 3. **Limited Dataset Size**: The dataset size was relatively small for training a CNN.
    - **Solution**: Experimented with transfer learning using pre-trained models like VGG16.
-
----
 
 ## How to Run the Project
 
@@ -114,4 +102,13 @@ To enhance model interpretability, Grad-CAM was used to visualize the areas of t
 ### 4. Synthetic Data Generation
 - Address dataset limitations by using **Generative Adversarial Networks (GANs)** to create synthetic retina images.
 - This approach can help expand the dataset while preserving class distributions and improving model generalizability.
+
+## Acknowledgments
+
+- **Dataset**: Thanks to Kaggle contributors for providing the [CVD vs Non-CVD Retinal Images of Cattle dataset](https://www.kaggle.com/datasets/animalbiometry/cvd-vs-noncvd-retinal-images-of-cattle), which served as the foundation for this project.
+- **Libraries**: Appreciation for the open-source tools and libraries used in this project:
+  - **TensorFlow**: For building and training deep learning models.
+  - **Keras**: For its user-friendly API and model creation.
+  - **Matplotlib**: For data visualization and graphical representation.
+  - **Grad-CAM**: For generating visual explanations of the model's predictions.
 
