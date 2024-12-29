@@ -53,10 +53,8 @@ To assess the performance of the model, the following metrics were used:
 ## Results
 
 ### Model Performance
-- **Training Accuracy**: XX%
-- **Validation Accuracy**: XX%
-- **Test Accuracy**: XX%
-- **AUC-ROC Score**: XX
+![Classification Report](performance_report.png)
+
 
 ### Grad-CAM Visualizations
 To enhance model interpretability, Grad-CAM was used to visualize the areas of the retina that the model focused on while making predictions. These heatmaps provide insights into the decision-making process and help validate the model's reliability.
